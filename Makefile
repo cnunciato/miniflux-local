@@ -8,10 +8,10 @@ db:
 	/Applications/Postgres.app/Contents/Versions/latest/bin/createdb miniflux || true && echo "Database already exists."
 
 migrate:
-	docker-compose exec miniflux /usr/local/bin/miniflux -migrate
+	docker-compose exec miniflux /usr/bin/miniflux -migrate
 
 admin_user:
-	docker-compose exec miniflux /usr/local/bin/miniflux -create-admin
+	docker-compose exec miniflux /usr/bin/miniflux -create-admin
 
 browse:
 	open "http://localhost:${MINIFLUX_PORT}"

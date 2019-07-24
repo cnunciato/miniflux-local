@@ -7,7 +7,7 @@ It runs Miniflux locally under [Docker Compose](https://docs.docker.com/compose/
 ```
 export MINIFLUX_PORT=9080  # or whatever port you'd like to use for the Miniflux service,
 make start db migrate      # to start the service, create the database and run its migrations,
-make admin_user            # and give your administrative user a username and a password, and
+make admin_user            # to your administrative user a username and a password, and finally,
 make browse                # to open the browser, sign in, and start RSSing.
 ```
 
