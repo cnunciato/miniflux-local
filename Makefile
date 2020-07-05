@@ -1,3 +1,5 @@
+MINIFLUX_PORT:=8080
+
 default: db migrate start admin_user browse
 
 # Start the Miniflux service.
